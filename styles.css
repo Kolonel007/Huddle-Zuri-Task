@@ -1,1 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+.oga-patata{
+    display:grid;
+    flex-direction: row;
+}
+.main-div1{
+    background-color: rgb(241, 251, 255);
+    width: auto;
+    height: 500px;
+    padding: 60px;
+    background-image: url("bg-hero-desktop.svg");
+    display: flex;
+    flex-direction: row;
+}
+.top-1{
+    width: 50%;
+}
+
+.top-1 img{
+    width: 130px;
+    display: grid;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.top-1 h2{
+    font-size:30px;
+    font-weight: 700;
+    margin-top: 120px;
+    margin-right: 150px;
+    font-family: 
+    Arial, Helvetica, sans-serif;
+}
+
+.top-1 button{
+    margin-top: 20px;
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(224, 73, 199);
+    border: none;
+    border-radius: 30px;
+    width: 20em;
+    height: auto;
+
+}
+
+.top-1 p{
+    font-size:small;
+    margin-right: 150px;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+.top-2{
+    display: grid;
+    flex-direction: row;
+    
+}
+
+.top-2 img{
+    width: 100vh;
+    margin-top: 50px;
+}
+
+.top-2 button{
+    width: 100px;
+    padding:10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 10em;
+    box-shadow: 0 2px 3px 0 rgba(123, 123, 123, 0.2), 0 2px 3px 0 rgba(127, 127, 127, 0.19);
+    font-weight: bold;
+    float: right;
+
+}
+
+
+.main-div2{
+    background-color: rgb(255, 255, 255);
+    height: 50vh;
+}
+
+.main-div3{
+    background-color: rgb(39, 40, 56);
+    color: rgb(255, 255, 255);
+    height: 25vh;
+}
+
+@media only screen and (max-width: 700px){
+    .top-1 h2{
+        margin-right: auto;
+    }
+    
+    .top-1 p{
+        margin-right: auto;
+    }
+
+    .top-2 img{
+        width: 270px;
+        margin-top:20px;
+        margin-left:10px;
+    }
+}
