@@ -88,6 +88,7 @@
   background-color: rgb(255, 255, 255);
   height: 1200px;
   padding: 70px;
+  z-index: 1;
 }
 
 /*Card 1*/
@@ -175,7 +176,53 @@
 }
 /* MAIN-DIV2 ends here*/
 
+.pseudo-div{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    border-radius: 10px;
+    height: 150px;
+    box-shadow: 0 3px 6px 0 rgba(91, 91, 91, 0.2),
+    0 3px 6px 0 rgba(57, 57, 57, 0.19);
+}
+
 /* Main-Div 3*/
+.footer {
+    position: relative;
+    z-index: 1;
+   }
+   
+ .pseudo-div {
+     position: absolute;
+     top:325%;
+     left:32%;
+     z-index: 1;
+     display: flex;
+     flex-direction: column;
+     color: rgb(52, 52, 52);
+     padding: 20px;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .pseudo-div h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 21px;
+        padding: 20px;
+   }
+
+   .pseudo-div button{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    font-size: 12px;
+    padding: 13px;
+    border: none;
+    border-radius: 40px;
+    background-color: rgb(255, 101, 196);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 3px 6px 0 rgba(91, 91, 91, 0.2),
+    0 3px 6px 0 rgba(57, 57, 57, 0.19);
+}
+
 .main-div3 {
   background-color: rgb(9, 36, 44);
   color: rgb(255, 255, 255);
@@ -324,21 +371,25 @@
     margin-top: 20px;
     margin-left: 10px;
   }
+
+  .main-div1{
+    padding: 15px;
+  }
   .main-div2 {
     padding: 20px;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
   }
 
   /* Q-Card1 */
   .main-div2 .card1 {
     display: flex;
-    flex-direction: row;
+    flex-direction:  column;
     height: 30%;
   }
   .main-div2 .card1 img {
     width: 170px;
     height: fit-content;
-    margin-right: 20px;
+    margin-right: 0;
     margin-top: 90px;
   }
 
@@ -349,14 +400,19 @@
   /* Q-Card2 */
   .main-div2 .card2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 30%;
   }
+
+  .main-div2 .card2 div p{
+    margin-right:0;
+  }
+
   .main-div2 .card2 img {
     width: 170px;
     height: fit-content;
     margin-right: 20px;
-    margin-top: 90px;
+    margin-top: 50px;
   }
 
   .card2 div {
@@ -366,13 +422,14 @@
   /* Q-Card3 */
   .main-div2 .card3 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: 30%;
+    
   }
   .main-div2 .card3 img {
     width: 170px;
     height: fit-content;
-    margin-right: 20px;
+    margin-right: 0;
     margin-top: 90px;
   }
 
@@ -390,4 +447,35 @@
   .card3 div {
     font-size: 13px;
   }
+
+.main-div2 .card1 div, .main-div2  .card2 div, .main-div2  .card3 div{
+margin: 0;
+padding: 0;
 }
+
+.main-div2 .card3 div p, .main-div2 .card1 div p, .main-div2 .card2 div p{
+    margin-right: 100px;
+}
+
+  .pseudo-div {
+    position: absolute;
+    top:330%;
+    left:30%;
+    height:120px;
+    width: 250px; 
+    margin-top: 30px;
+}
+
+.pseudo-div h2{
+    text-align: center;
+}
+
+.pseudo-div button{
+    width: 150px;
+    margin-bottom: 10px;
+}
+}
+
+
+
+
