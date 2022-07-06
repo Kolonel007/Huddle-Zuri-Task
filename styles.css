@@ -67,6 +67,14 @@
 .top-2 img {
   width: 100vh;
   margin-top: 50px;
+  animation: slide-up 1s;
+}
+
+@keyframes slide-up{
+  from{opacity:0.1;
+      margin-top:100px;}
+  to{opacity:1;
+     margin-top:50px;}
 }
 
 .top-2 button {
